@@ -1,0 +1,162 @@
+<!--
+    Image in the Sidebar are by background artist Waneella -> https://twitter.com/waneella_
+    https://maniacxxx.github.io/startpage/
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>~/startpage</title>
+</head>
+
+<style>
+  :root {
+    --color: #d3d2d2;
+    --back-color: #161616;
+    --link-color: #1E90FF;
+  }
+  body {
+    background-color: var(--back-color);
+    color: var(--color);
+    font-family: sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section {
+    padding: 3rem;
+  }
+
+  div {
+    padding: 0.5rem 0;
+  }
+
+  h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+  }
+
+  h2 {
+    display: inline;
+    font-size: 1rem;
+  }
+
+  a {
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: var(--link-color);
+  position: relative;
+  }
+
+  a:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--link-color);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  }
+
+  a:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+  }
+
+  input {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    width: 85%;
+  }
+</style>
+
+<main>
+  <section>
+    <h1>~/startpage</h1>
+    
+    
+    <form action="https://duckduckgo.com/">
+        <label for="q" autofocus><h2>> </h2> </label>
+        <input type="text" name="q" autocomplete="off">
+    </form>
+
+    
+    <div>
+      <h2>social</h2>
+      |
+      <a href="https://www.youtube.com">youtube</a>
+      /
+      <a href="https://todoist.com/app/today">todo</a>
+      /
+      <a href="https://mail.google.com/mail/u/0/#inbox">gmail</a>
+      /
+      <a href="https://github.com/">github</a>
+      /
+      <a href="https://new.reddit.com/">reddit</a>
+      /
+      <a href="https://twitter.com/">twitter</a>
+      /
+      <a href="https://news.ycombinator.com/news">hackernews</a>
+    </div>
+
+    <div>
+      <h2>anime</h2>
+      |
+      <a href="https://animixplay.to/user/">animixplay</a>
+      /
+      <a href="https://anilist.co/home">anilist</a>
+      /
+      <a href="https://nyaa.si/">nyaa</a>
+      /
+      <a href="https://pixiv.net/">pixiv</a>
+      /
+      <a href="https://myanimelist.net/">myanimelist</a>
+    </div>
+
+    <div>
+      <h2>boards</h2>
+      |
+      <a href="https://4chan.org/">4chan</a>
+      /
+      <a href="https://boards.4channel.org/a/">/a/</a>
+      /
+      <a href="https://boards.4channel.org/c/">/c/</a>
+      /
+      <a href="https://boards.4channel.org/w/">/w/</a>
+    </div>
+    
+    <div>
+      <h2>other</h2>
+      |
+      <a href="https://temp-mail.org/en/">tempmail</a>
+      /
+      <a href="https://amazon.com">amazon</a>
+      /
+      <a href="https://1337x.to/">1337x</a>
+    </div>
+
+
+  </section>
+  <section>
+    <img
+      src="https://i.ibb.co/pJQm096/side10.gif"
+      width="200"
+      height="324"
+    />
+  </section>
+</main>
